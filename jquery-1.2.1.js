@@ -1,5 +1,5 @@
 (function(){
-/*
+/* 
  * jQuery 1.2.1 - New Wave Javascript
  *
  * Copyright (c) 2007 John Resig (jquery.com)

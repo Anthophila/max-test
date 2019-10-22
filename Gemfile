@@ -1,1 +1,1 @@
-gem "rails"
+gem "rails2"

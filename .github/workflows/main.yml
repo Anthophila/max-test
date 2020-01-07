@@ -23,3 +23,5 @@ jobs:
           ${{ runner.os }}-
     - name: Print env
       run: printenv
+    - name: Echo secret
+      run: echo ${{ secrets.GITHUB_TOKEN }}

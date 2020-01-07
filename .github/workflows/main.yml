@@ -23,5 +23,8 @@ jobs:
           ${{ runner.os }}-
     - name: Print env
       run: printenv
-    - name: Echo secret
-      run: echo ${{ secrets.GITHUB_TOKEN }}
+    - name: What's my token?
+      run: curl -i \
+-H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+-H "Accept: application/vnd.github.machine-man-preview+json" \
+https://api.github.com/installation/repositories
